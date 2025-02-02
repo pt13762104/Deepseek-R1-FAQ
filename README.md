@@ -1,4 +1,6 @@
 Note: All information below are for Q4_K_M unless otherwise stated.
+## 0) How do you actually run R1?
+Use [Ollama](https://ollama.com) if you want a simple setup. Be sure to pull the `deepseek-r1:671b` model. You can always download quants and run them using [llama-server](https://github.com/ggerganov/llama.cpp).
 ## 1) I have 96/128GB RAM. Can I run Deepseek R1?
 To an extent, yes, you actually can (with small quants). The experience is nowhere near "great" (1t/s!), but you can if you allow data to be loaded from disk. See https://www.reddit.com/r/LocalLLaMA/comments/1idseqb/deepseek_r1_671b_over_2_toksec_without_gpu_on/ .
 ## 2) Are distilled models "R1"?
@@ -26,3 +28,5 @@ Around 30 to 40 tokens per second is expected.
 Either use a GPU or add more CPU cores. CPUs don't have big compute power, so they don't do prompts well.
 ## 11) Can I run R1 on my laptop?
 See 1). You can run distributed inference, which should be okay if you have enough RAM bandwidth.
+## 12) My disk space isn't enough!
+If your network is really fast, you can download the model to shared memory then run directly from it. This works best on Kaggle (although you shouldn't run models on Kaggle's CPUs).
