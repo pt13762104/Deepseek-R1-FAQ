@@ -1,9 +1,9 @@
+Note: All information below are for Q4_K_M unless otherwise stated.
 ## 1) I have 96/128GB RAM. Can I run Deepseek R1?
-To an extent, yes, you actually can (with small quants). The experience is nowhere near "great", but you can if you allow data to be loaded from disk. See https://www.reddit.com/r/LocalLLaMA/comments/1idseqb/deepseek_r1_671b_over_2_toksec_without_gpu_on/ .
+To an extent, yes, you actually can (with small quants). The experience is nowhere near "great" (1t/s!), but you can if you allow data to be loaded from disk. See https://www.reddit.com/r/LocalLLaMA/comments/1idseqb/deepseek_r1_671b_over_2_toksec_without_gpu_on/ .
 ## 2) Are distilled models "R1"?
 No.
 ## 3) What are the system requirements?
-Note: Q4_K_M below
 | **Model** | **Minimum VRAM** | **Recommended VRAM** | **Minimum RAM** | **Recommended RAM** | **KV cache size MB (2k context)** | **Example hardware** |
 |-----------|------------------|----------------------|-----------------|---------------------|-----------------------------------|----------------------|
 | 671b      | 480              | 640                  | 512             | 768                 | 9760                              | 8x H100              |
