@@ -6,12 +6,6 @@ No.
 Note: Q4_K_M below
 | **Model** | **Minimum VRAM** | **Recommended VRAM** | **Minimum RAM** | **Recommended RAM** | **KV cache size MB (2k context)** | **Example hardware** |
 |-----------|------------------|----------------------|-----------------|---------------------|-----------------------------------|----------------------|
-| 1.5b      | 2                | 4                    | 4               | 8                   | 56                                | GTX 1650             |
-| 7b        | 6                | 8                    | 12              | 16                  | 112                               | RTX 3060             |
-| 8b        | 8                | 12                   | 12              | 16                  | 256                               | RTX 3060             |
-| 14b       | 12               | 16                   | 16              | 24                  | 384                               | RTX 4070             |
-| 32b       | 24               | 32                   | 32              | 48                  | 512                               | RTX 3090             |
-| 70b       | 48               | 72                   | 64              | 96                  | 640                               | 3x RTX 3090          |
 | 671b      | 480              | 640                  | 512             | 768                 | 9760                              | 8x H100              |
 ## 4) I have 8 channels of RAM, how many token/s can I expect?
 Expect about 4-6 token/s for DDR5, 3-4 for DDR4.
