@@ -24,3 +24,5 @@ Around 30 to 40 tokens per second is expected.
 3. Use KV cache quant.
 ## 10) My prompt processing speed is slow. Why?
 Either use a GPU or add more CPU cores. CPUs don't have big compute power, so they don't do prompts well.
+## 11) Can I run R1 on my laptop?
+See 1). You can run distributed inference, which should be okay if you have enough RAM bandwidth.
