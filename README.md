@@ -12,7 +12,7 @@ No.
 ## 4) I have 8 channels of RAM, how many token/s can I expect?
 Expect about 4-6 token/s for DDR5, 3-4 for DDR4.
 ## 5) Can you get an usable R1 experience without GPUs?
-With multi-channel RAM (12+ channels, 768 bit bus or more) you can get >= [8t/s](https://www.youtube.com/watch?v=wKZHoGlllu4) peak (only Q4_K_S, sorry) if your RAM is clocked high enough. It should be usable if you have enough of that kind of RAM and your request doesn't suffer from 13).
+With multi-channel RAM (12+ channels, 768 bit bus or more) you can get >= [8t/s](https://www.youtube.com/watch?v=wKZHoGlllu4) peak (only Q4_K_S, sorry) if your RAM is clocked high enough. It should be usable if you have enough of that kind of RAM.
 ## 6) If I don't have the resources, should I run the setup in 1)?
 If you're going to wait for a really long time for a prompt, then maybe.
 ## 7) How can I run R1 for cheap?
@@ -30,5 +30,3 @@ Either use a GPU or add more CPU cores. CPUs don't have big compute power, so th
 See 1). You can run distributed inference, which should be okay if you have enough RAM bandwidth.
 ## 12) My disk space isn't enough!
 If your network is really fast, you can download the model to shared memory then run directly from it. This works best on Kaggle (although you shouldn't run models on Kaggle's CPUs).
-## 13) The model is much slower than it was at the beginning of the run!
-This is expected behaviour, see [this](https://github.com/ggerganov/llama.cpp/pull/11446) for more info.
