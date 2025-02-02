@@ -30,3 +30,5 @@ Either use a GPU or add more CPU cores. CPUs don't have big compute power, so th
 See 1). You can run distributed inference, which should be okay if you have enough RAM bandwidth.
 ## 12) My disk space isn't enough!
 If your network is really fast, you can download the model to shared memory then run directly from it. This works best on Kaggle (although you shouldn't run models on Kaggle's CPUs).
+## 13) The model is much slower than it was at the beginning of the run!
+This is expected behaviour, see [this](https://github.com/ggerganov/llama.cpp/pull/11446) for more info.
