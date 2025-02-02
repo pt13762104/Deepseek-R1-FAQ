@@ -12,7 +12,7 @@ No.
 ## 4) I have 8 channels of RAM, how many token/s can I expect?
 Expect about 4-6 token/s for DDR5, 3-4 for DDR4.
 ## 5) Can you get an usable R1 experience without GPUs?
-With multi-channel RAM (12+ channels, 768 bit bus or more) you can get >= [8t/s](https://www.youtube.com/watch?v=wKZHoGlllu4) if your RAM is clocked high enough. It should be usable if you have enough of that kind of RAM.
+With multi-channel RAM (12+ channels, 768 bit bus or more) you can get >= [8t/s](https://www.youtube.com/watch?v=wKZHoGlllu4) peak if your RAM is clocked high enough. It should be usable if you have enough of that kind of RAM and your request doesn't suffer from 13).
 ## 6) If I don't have the resources, should I run the setup in 1)?
 If you're going to wait for a really long time for a prompt, then maybe.
 ## 7) How can I run R1 for cheap?
