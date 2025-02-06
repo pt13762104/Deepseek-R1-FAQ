@@ -1,6 +1,6 @@
 Note: All information below are for Q4_K_M unless otherwise stated.
-## -1) I CAN RUN R1 ON MY RASPBERRY PI / RTX4090 / MY MOBILE PHONE / ...
-Shut up.
+## -1) I CAN RUN R1 ON MY RASPBERRY PI / RTX 4090 / MY MOBILE PHONE / ...
+See 2) and SHUT UP.
 ## 0) How do you actually run R1?
 Use [Ollama](https://ollama.com) if you want a simple setup. Be sure to pull the `deepseek-r1:671b` model. You can always download quants and run them using [llama-server](https://github.com/ggerganov/llama.cpp).
 ## 1) I have 96/128GB RAM. Can I run Deepseek R1?
