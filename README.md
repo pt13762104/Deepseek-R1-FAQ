@@ -8,9 +8,11 @@ To an extent, yes, you actually can (with small quants e.g. IQ1, Q2, etc...). Th
 ## 2) Are distilled models "R1"?
 No.
 ## 3) What are the system requirements?
-| **Model** | **Minimum VRAM** | **Recommended VRAM** | **Minimum RAM** | **Recommended RAM** | **KV cache size MB (2k context)** | **Example hardware** |
+| **Model** | **Minimum VRAM** | **Recommended VRAM** | **Minimum RAM** | **Recommended RAM** | **KV cache size MiB (2k context)** | **Example hardware** |
 |-----------|------------------|----------------------|-----------------|---------------------|-----------------------------------|----------------------|
 | 671b      | 480              | 640                  | 512             | 768                 | 9760                              | 8x H100              |
+
+For max context (160K), you'll need 762.5 GiB of additional RAM/VRAM.
 ## 4) I have 8 channels of RAM, how many token/s can I expect?
 Expect about 4-6 token/s for DDR5, 3-4 for DDR4.
 ## 5) Can you get an usable R1 experience without GPUs?
@@ -30,5 +32,10 @@ Around 30 to 40 tokens per second is expected.
 Either use a GPU or add more CPU cores. CPUs don't have big compute power, so they don't do prompts well.
 ## 11) Can I run R1 on my laptop?
 See 1). You can run distributed inference, which should be okay if you have enough RAM bandwidth.
+## 11.5) Can you actually run R1 on 4090s?
+See 3). You'll need server/workstation CPUs to handle the big number of GPUs.
 ## 12) My disk space isn't enough!
 If your network is really fast, you can download the model to shared memory then run directly from it. This works best on Kaggle (although you shouldn't run models on Kaggle's CPUs).
+## 13) Why is the KV cache so big :sob:
+Multi head attention, see here: https://github.com/ggerganov/llama.cpp/pull/11446. When MLA is implemented it should reduce the KV size, at the cost of slower prompt processing.
+
