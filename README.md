@@ -38,5 +38,5 @@ See 3). You'll need server/workstation CPUs to handle the big number of GPUs.
 If your network is really fast, you can download the model to shared memory then run directly from it. This works best on Kaggle (although you shouldn't run models on Kaggle's CPUs).
 ## 13) Why is the KV cache so big :sob:
 Multi head attention, see here: https://github.com/ggerganov/llama.cpp/pull/11446. When MLA is implemented it should reduce the KV size, at the cost of slower prompt processing.
-## 14) The model doesn't think in the <think> tags!
+## 14) The model doesn't think in the \<think\> tags!
 This is an observed behaviour, see this for more information: https://huggingface.co/deepseek-ai/DeepSeek-R1#usage-recommendations.
