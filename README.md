@@ -1,4 +1,4 @@
-Note: All information below are for Q4_K_M unless otherwise stated.
+Note: All information below are for Q4_K_M and peak llama.cpp token gen performance unless otherwise stated.
 ## -1) I CAN RUN R1 ON MY RASPBERRY PI / RTX 4090 / MY MOBILE PHONE / ...
 See 2) and ~~SHUT UP~~ fix your content, please.
 ## 0) How do you actually run R1?
