@@ -24,11 +24,11 @@ See https://digitalspaceport.com/how-to-run-deepseek-r1-671b-fully-locally-on-20
 ## 8) I have 8xH100s, how many token it's expected?
 Around 30 to 40 tokens per second is expected.
 ## 9) How do I increase throughput?
--1. Use tensor overrides.
-0. Use a fast enough GPU.
-1. Make your RAM faster (obvious)
-2. Change used_expert_count to a smaller amount than 8. You might get bad results with a small number of experts.
-3. Use KV cache quant.
+0. Use tensor overrides.
+1. Use a fast enough GPU.
+2. Make your RAM faster (obvious)
+3. Change used_expert_count to a smaller amount than 8. You might get bad results with a small number of experts.
+4. Use KV cache quant.
 ## 10) My prompt processing speed is slow. Why?
 Either use a GPU or add more CPU cores. CPUs don't have big compute power, so they don't do prompts well.
 ## 11) Can I run R1 on my laptop?
