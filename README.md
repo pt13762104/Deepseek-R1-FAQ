@@ -24,6 +24,7 @@ See https://digitalspaceport.com/how-to-run-deepseek-r1-671b-fully-locally-on-20
 ## 8) I have 8xH100s, how many token it's expected?
 Around 30 to 40 tokens per second is expected.
 ## 9) How do I increase throughput?
+-1. Use tensor overrides.
 0. Use a fast enough GPU.
 1. Make your RAM faster (obvious)
 2. Change used_expert_count to a smaller amount than 8. You might get bad results with a small number of experts.
